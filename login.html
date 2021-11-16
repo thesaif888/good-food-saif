@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodZone</title>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;
+      background-image: url(https://wallpaperaccess.com/full/1900857.jpg);
+      }
+b{
+    color: white;
+}
+h2{
+    color: white;
+    text-align:left;
+    margin-left: 28px;
+}
+
+input[type=text]{
+    width: 100%;
+    padding: 12px;
+    display:flex;
+    border: none;
+    background:rgb(190, 170, 140);
+}
+hr{
+    border: 1px solid;
+    margin-bottom: 25px;
+}
+
+button{
+    background-color:green;
+    color: white;
+    margin: 20px 20px;
+    padding: 14px 18px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border:none;
+    width:40%;
+    opacity: 0.9;
+}
+.Cancelbtn{
+    background-color: red;
+    width: auto;
+    padding: 10px 18px;
+}
+button:hover{
+ opacity: 1.2;
+}
+.log{
+    display: table;
+    padding:30px;   
+}
+ .log a{
+     text-decoration: none;
+     color: white;
+}
+.psw{
+    padding:  10px 18px;
+    background-color: blue;
+    opacity: 0.9;
+}
+.psw:hover{
+    opacity: 1.2;
+}
+    </style>
+</head>
+<body>
+    <h2>Login Page</h2>
+    <hr>
+    <form action="serverUrl">
+        <div class="log">
+
+            <label for="email"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="email" required>
+
+            <label for="passward"><b>Passward</b></label>
+            <input type="text" placeholder="Enter passward" name="passward" required>
+            <button type="Submit">Login</button>
+            <button type="Submit" >
+            <a href="signup.html">Signup</a>
+            </button>
+        </div>
+
+        <div class="log">
+        <button type="button" class="Cancelbtn">
+            <a href="home.html">Cancel</a>
+        </button>
+        <div class="psw">Forget <a href="passward.html">Passward?</a></div>
+    </div>
+    
+    </form>
+</body>
+</html>

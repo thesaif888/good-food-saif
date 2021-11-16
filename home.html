@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodZone</title>
+    <link rel="stylesheet" type="text/css" href="css/order.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .bg-img{
+    background-image:url(https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png);
+    height: 700px;;
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.container{
+    position: absolute;
+    margin: 20px;
+    }
+
+.topnav{
+    overflow: hidden
+}
+.topnav a{
+    float:right;
+    text-align: center;
+    padding: 8px 16px;
+    font-size: 18px;
+    color: ivory;
+    text-decoration: none;
+}
+.topnav a:hover{
+    background-color:black ;
+}
+.topnav a.active{
+    background-color:thistle;
+}
+.centre{
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+   .centre h1{font-size: 60px;}
+   .centre h4{font-size: 30px;}
+
+.footer{
+    text-align: center;
+    background-image: url(http://cvitanic.info/wp-content/uploads/2016/05/Footer-background.jpg);
+    color: white;
+}
+.footer a{
+    font-size: 28px;
+    color:violet;
+    padding:18px
+}
+ @media screen and (max-width: 600px){
+    .topnav a{
+        width: 100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+   <div class="bg-img">
+     <div class="container">
+      <div class="topnav">
+          <a href="login.html">Login</a>
+          <a href="signup.html">Signup</a>
+          <a href="contact.html">Contact</a>
+          <a class="active" href="home.html">Home</a>
+      </div>
+        </div>
+       <div class="centre">
+        <h1>Good Food from Saif Ali</h1>
+        <h4>Want to eat some delicious food, Good food from Saif have everything for you!</h4>
+    </div>
+   </div>
+
+   <div class="footer">
+       <h2>Check us on</h2>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-wikipedia-w"></i></a>
+   </div>
+</body>
+</html>

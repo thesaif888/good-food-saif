@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodZone</title>
+    <link rel="stylesheet" type="text/css" href="css/sign.css">  
+    <style>
+        *{box-sizing: border-box;}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(https://thumbs.dreamstime.com/z/access-window-login-password-virtual-screen-cyber-security-personal-data-protection-concept-access-window-132116227.jpg); 
+}
+   
+input[type=text]{
+    width: 100%;
+    padding: 12px;
+    display: flex;
+    border: none;
+    background:blanchedalmond;
+}
+hr{
+    border: 1px solid;
+    margin-bottom: 25px;
+}
+button{
+    background-color:green;
+    color: white;
+    margin: 8px 2px;
+    padding: 14px 18px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border:none;
+    width:30%;
+    opacity: 0.9;
+}
+.cancelbtn{
+    background-color: red;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+button:hover{
+ opacity: 1.2;
+}
+.log{
+    display: table;
+    padding:40px;
+    
+}
+    </style>
+</head>
+<body>
+    <form action="serverUrl">     
+    <div class="log">
+
+        <h1>Sign Up</h1>
+        <h3>Please fill in this form to create an account</h3>
+
+        <hr>
+        <label for="Phone No."><b>Phone No.</b></label>
+       <input type="text" placeholder="Enter Phone No." name="Phone No." required>
+
+       <label for="email"><b>Username</b></label>
+       <input type="text" placeholder="Enter Username" name="email" required>
+
+       <label for="passward"><b>Set passward</b></label>
+       <input type="text" placeholder="Enter passward" name="passward" required>
+
+       <label for="verify passward"><b>Verify Passward </b></label>
+       <input type="text" placeholder="verify passward" name="Repeat passward" required>
+
+
+       <div class="btn">
+            <button type="button" class="cancelbtn">
+                <a href="home.html">Cancel</a>
+            </button>
+            <button type="button" class="signupbtn">SignUp</button>
+       </div>
+    </div>
+ </form>
+</body>
+</html>

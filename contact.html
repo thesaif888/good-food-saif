@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodZone</title>
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <style>
+        body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+input[type=text],select,textarea{
+    width: 100%;
+    padding: 12px 12px;
+    margin-bottom: 20px;
+    display: flex;
+    border:none;
+    background:wheat;
+    box-sizing: border-box;
+}
+  button{
+    background-color:green;
+    color: white;
+    padding:12px 20px;
+    cursor: pointer;
+    border: none;
+    opacity: 0.9;
+}
+ button:hover{
+    opacity: 1.2;
+}
+.container{
+    display:-ms-inline-flexbox;
+    padding: 20px;
+   background-image: url(https://i.pinimg.com/originals/7f/22/bd/7f22bd1107b49b5eac20ce21b80d6489.jpg);
+   color: white;
+}
+.ace{
+    text-align: center;
+    background-image: url(https://i.pinimg.com/originals/7f/22/bd/7f22bd1107b49b5eac20ce21b80d6489.jpg);
+    color: white;
+    padding-bottom: 30px;
+}
+    </style>
+</head>
+<body>
+    <div class="ace">
+    <h2>Contact Us</h2>
+    <p>please fill this form decently</p>
+    </div>
+
+    <hr>
+
+    <form action="serverUrl">
+        <div class="container">
+
+            <label for="Name"><b>Full Name</b></label>
+           <input type="text" placeholder="Enter Name" name="Name" required>
+    
+           <label for="email"><b>Email</b></label>
+           <input type="text" placeholder="Enter email" name="email" required>
+    
+           <label for="country"><b>Country</b></label>
+           <select class="country" name="country">
+            <option value="australia">India</option>
+            <option value="canada">Australia</option>
+            <option value="usa">USA</option>
+          </select>
+
+           <label for="Subject">Subject</label>
+           <textarea name="subject" placeholder="write something...." cols="30" rows="10"></textarea>
+
+           <button type="button">Submit</button>
+    
+        </div>
+    </form>
+</body>
+</html>
